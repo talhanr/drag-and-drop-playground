@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Drop Playground</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div draggable="true" data-type="text">Text</div>
+      <div draggable="true" data-type="image">Image</div>
+      <div draggable="true" data-type="shape">Shape</div>
+    </div>
+    <div class="playground" id="playground"></div>
+    <div class="right_section">
+      <div class="properties" id="properties">
+        <h3>Properties</h3>
+        <form id="propertiesForm"></form>
+      </div>
+      <div class="playgroundState">
+        <h3>Playground State</h3>
+        <div>
+          <button class="stateButton" id="savePlayground">Save</button>
+          <button class="stateButton" id="loadPlayground">Load</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
