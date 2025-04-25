@@ -90,11 +90,6 @@ function updateProperties(e) {
 function updateElementProperties(el, form) {
   const formData = new FormData(form);
 
-  setElementStyles(el, {
-    width: formData.get("width"),
-    height: formData.get("height"),
-  });
-
   if (el.dataset.type === "text") {
     el.style.fontFamily = formData.get("fontFamily");
     el.style.fontSize = formData.get("fontSize").includes("px") ? formData.get("fontSize") : formData.get("fontSize") + "px";
